@@ -6,5 +6,15 @@ use Illuminate\Database\Eloquent\Model;
 
 class SupplierList extends Model
 {
-    protected $fillable = [];
+    protected $table = 'supplier_list';
+
+    protected $fillable = [
+        'parentid',
+        'siteid',
+        'type',
+        'domain',
+        'refid',
+        'status',
+        'editor'
+    ];
 }
